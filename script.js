@@ -5,7 +5,7 @@ function promise(age,name){
             if(age >= 18){
                 resolve(`Welcome, ${name}. You can vote.`)
             } else{
-                reject(`Oh sorry, ${name}. You aren't old enough.`)
+                reject(`Oh sorry ${name}. You aren't old enough.`)
             }
         })
     })
@@ -18,7 +18,7 @@ document.getElementById("userForm").addEventListener("submit", (Event)=>{
     let age = document.getElementById("age").value
 
     if(!age || !name){
-        alert("Please fill out both fields.")
+        alert("Please enter valid details")
         return;
     }
 
